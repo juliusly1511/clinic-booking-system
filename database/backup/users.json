@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "674000000000000000000001",
+    "name": "Juan Dela Cruz",
+    "email": "patient@clinic.test",
+    "phone": "+639171234567",
+    "role": "patient",
+    "isActive": true,
+    "consentAt": "2026-11-19T08:00:00.000Z"
+  },
+  {
+    "_id": "674000000000000000000002",
+    "name": "Ana Reyes",
+    "email": "staff@clinic.test",
+    "phone": "+639172223344",
+    "role": "staff",
+    "isActive": true,
+    "consentAt": "2026-11-19T08:00:00.000Z"
+  },
+  {
+    "_id": "674000000000000000000003",
+    "name": "Marco Villanueva",
+    "email": "admin@clinic.test",
+    "phone": "+639173334455",
+    "role": "admin",
+    "isActive": true,
+    "consentAt": "2026-11-19T08:00:00.000Z"
+  },
+  {
+    "_id": "674000000000000000000004",
+    "name": "Dr. Elena Santos",
+    "email": "doctor.santos@clinic.test",
+    "phone": "+639174445566",
+    "role": "doctor",
+    "isActive": true,
+    "consentAt": "2026-11-19T08:00:00.000Z"
+  },
+  {
+    "_id": "674000000000000000000005",
+    "name": "Dr. Rafael Mendoza",
+    "email": "doctor.mendoza@clinic.test",
+    "phone": "+639175556677",
+    "role": "doctor",
+    "isActive": true,
+    "consentAt": "2026-11-19T08:00:00.000Z"
+  },
+  {
+    "_id": "674000000000000000000006",
+    "name": "Dr. Camille Lim",
+    "email": "doctor.lim@clinic.test",
+    "phone": "+639176667788",
+    "role": "doctor",
+    "isActive": true,
+    "consentAt": "2026-11-19T08:00:00.000Z"
+  }
+]

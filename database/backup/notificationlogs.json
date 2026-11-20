@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "674000000000000000000401",
+    "appointmentId": "674000000000000000000201",
+    "recipient": "+639171234567",
+    "type": "confirmation",
+    "channel": "sms",
+    "status": "sent",
+    "providerMessageId": "sandbox-sms-local",
+    "sentAt": "2026-11-19T09:00:00.000Z"
+  },
+  {
+    "_id": "674000000000000000000402",
+    "appointmentId": "674000000000000000000201",
+    "recipient": "patient@clinic.test",
+    "type": "confirmation",
+    "channel": "email",
+    "status": "sent",
+    "providerMessageId": "sandbox-email-local",
+    "sentAt": "2026-11-19T09:00:01.000Z"
+  }
+]

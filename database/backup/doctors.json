@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "674000000000000000000101",
+    "userId": "674000000000000000000004",
+    "specialty": "Cardiology",
+    "bio": "Preventive cardiology, ECG interpretation, and hypertension care.",
+    "roomNumber": "Room 201",
+    "slotDuration": 30,
+    "workingDays": [1, 2, 3, 4, 5],
+    "startTime": "09:00",
+    "endTime": "17:00",
+    "isActive": true
+  },
+  {
+    "_id": "674000000000000000000102",
+    "userId": "674000000000000000000005",
+    "specialty": "Pediatrics",
+    "bio": "Well-child checkups, pediatric immunizations, and acute care.",
+    "roomNumber": "Room 104",
+    "slotDuration": 20,
+    "workingDays": [1, 2, 3, 4, 5, 6],
+    "startTime": "08:00",
+    "endTime": "16:00",
+    "isActive": true
+  },
+  {
+    "_id": "674000000000000000000103",
+    "userId": "674000000000000000000006",
+    "specialty": "General Medicine",
+    "bio": "Primary care consultations, medical clearances, and chronic care.",
+    "roomNumber": "Room 102",
+    "slotDuration": 30,
+    "workingDays": [1, 2, 3, 4, 5],
+    "startTime": "09:00",
+    "endTime": "17:00",
+    "isActive": true
+  }
+]

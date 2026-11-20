@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "674000000000000000000201",
+    "patientId": "674000000000000000000001",
+    "doctorId": "674000000000000000000101",
+    "date": "2026-11-25",
+    "timeSlot": "09:30",
+    "startsAt": "2026-11-25T01:30:00.000Z",
+    "status": "confirmed",
+    "reason": "Annual blood pressure follow-up",
+    "notes": "",
+    "isWalkIn": false,
+    "reminder24hSent": false,
+    "reminder2hSent": false
+  },
+  {
+    "_id": "674000000000000000000202",
+    "patientId": "674000000000000000000001",
+    "doctorId": "674000000000000000000102",
+    "date": "2026-11-20",
+    "timeSlot": "15:00",
+    "startsAt": "2026-11-20T07:00:00.000Z",
+    "status": "completed",
+    "reason": "Walk-in pediatric clearance",
+    "notes": "Vitals stable; medical clearance issued.",
+    "isWalkIn": true,
+    "reminder24hSent": true,
+    "reminder2hSent": true
+  }
+]

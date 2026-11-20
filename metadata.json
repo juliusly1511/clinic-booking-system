@@ -1,6 +1,0 @@
-{
-  "name": "City Health Clinic",
-  "description": "Clinic appointment booking, walk-in queue, doctor schedule, visit notes, and clinic reporting system.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

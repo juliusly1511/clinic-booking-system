@@ -1,0 +1,94 @@
+{
+  "info": {
+    "name": "SIA101 Clinic Booking System API",
+    "_postman_id": "a7e5c3b0-4c9d-4c87-8b2f-91a0e4d23c10",
+    "description": "Postman collection covering Auth, Doctors & Slots, Appointments, Admin, and Reports.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:5000/api" },
+    { "key": "token", "value": "" },
+    { "key": "doctorId", "value": "" },
+    { "key": "appointmentId", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": { "method": "GET", "url": "{{baseUrl}}/health" }
+    },
+    {
+      "name": "Auth - Register Patient",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Juan Dela Cruz\",\n  \"email\": \"juan.demo@clinic.test\",\n  \"phone\": \"09171234567\",\n  \"password\": \"Clinic123!\",\n  \"consentAccepted\": true\n}"
+        },
+        "url": "{{baseUrl}}/auth/register"
+      }
+    },
+    {
+      "name": "Auth - Login",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"patient@clinic.test\",\n  \"password\": \"Clinic123!\"\n}"
+        },
+        "url": "{{baseUrl}}/auth/login"
+      }
+    },
+    {
+      "name": "Doctors - List Active",
+      "request": { "method": "GET", "url": "{{baseUrl}}/doctors" }
+    },
+    {
+      "name": "Doctors - Available Slots",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/doctors/{{doctorId}}/slots?date=2026-12-01"
+      }
+    },
+    {
+      "name": "Appointments - Create Booking",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{token}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"doctorId\": \"{{doctorId}}\",\n  \"date\": \"2026-12-01\",\n  \"timeSlot\": \"09:30\",\n  \"reason\": \"Routine cardiology consultation\"\n}"
+        },
+        "url": "{{baseUrl}}/appointments"
+      }
+    },
+    {
+      "name": "Appointments - List Scoped",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+        "url": "{{baseUrl}}/appointments"
+      }
+    },
+    {
+      "name": "Appointments - Cancel",
+      "request": {
+        "method": "PATCH",
+        "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+        "url": "{{baseUrl}}/appointments/{{appointmentId}}/cancel"
+      }
+    },
+    {
+      "name": "Reports - Summary KPIs (Admin)",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+        "url": "{{baseUrl}}/reports/summary"
+      }
+    }
+  ]
+}
